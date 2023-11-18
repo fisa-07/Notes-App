@@ -16,7 +16,7 @@ Tech Stack
 Language: Java
 Storage: SharedPreferences
 Getting Started
-Clone the repository: git clone https://github.com/your-username/notes-app.git
+Clone the repository: git clone https://github.com/your-username/Notes-App.git
 Open the project in Android Studio.
 Build and run the app on an Android emulator or device.
 Contributions
