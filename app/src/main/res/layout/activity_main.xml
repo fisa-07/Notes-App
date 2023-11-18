@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/my_primary"
+        android:id="@+id/app_banner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Notes"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_banner"
+        android:id="@+id/recycler_view"
+        android:dividerHeight="10dp"
+        android:divider="@color/white"
+        tools:listitem="@layout/list_item"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@id/note_banner">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/note_banner">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:hint="Notes"
+            android:padding="10dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/add_notes_button"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/note_editText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:text="Add"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/add_notes_button"/>
+    </RelativeLayout>
+
+</RelativeLayout>
